@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="room" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2A1810"/>
+      <stop offset="100%" style="stop-color:#3D2415"/>
+    </linearGradient>
+    <linearGradient id="floor2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5A3A1A"/>
+      <stop offset="100%" style="stop-color:#4A2A10"/>
+    </linearGradient>
+    <linearGradient id="tv" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="50%" style="stop-color:#533483"/>
+      <stop offset="100%" style="stop-color:#e94560"/>
+    </linearGradient>
+    <linearGradient id="bed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8882A"/>
+      <stop offset="100%" style="stop-color:#9B6520"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8C00" stop-opacity="0.3"/>
+      <stop offset="100%" style="stop-color:#FF4500" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="warmglow">
+      <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Dark cozy room background -->
+  <rect width="800" height="500" fill="url(#room)"/>
+  <!-- Wall panels -->
+  <rect x="0" y="0" width="800" height="310" fill="#3D2415" opacity="0.8"/>
+  <rect x="50" y="30" width="200" height="240" rx="5" fill="none" stroke="#5A3A1A" stroke-width="2"/>
+  <rect x="300" y="30" width="200" height="240" rx="5" fill="none" stroke="#5A3A1A" stroke-width="2"/>
+  <rect x="550" y="30" width="200" height="240" rx="5" fill="none" stroke="#5A3A1A" stroke-width="2"/>
+  <!-- Floor with warm underfloor heating glow -->
+  <rect x="0" y="310" width="800" height="190" fill="url(#floor2)"/>
+  <rect x="0" y="308" width="800" height="6" fill="#3A2010"/>
+  <!-- Heating glow effect on floor -->
+  <ellipse cx="400" cy="400" rx="350" ry="80" fill="url(#warm)" filter="url(#warmglow)" opacity="0.7"/>
+  <!-- Floor boards lines -->
+  <line x1="0" y1="340" x2="800" y2="340" stroke="#3A2010" stroke-width="1.5" opacity="0.5"/>
+  <line x1="0" y1="370" x2="800" y2="370" stroke="#3A2010" stroke-width="1.5" opacity="0.5"/>
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#3A2010" stroke-width="1.5" opacity="0.5"/>
+  <line x1="0" y1="430" x2="800" y2="430" stroke="#3A2010" stroke-width="1.5" opacity="0.5"/>
+  <line x1="0" y1="460" x2="800" y2="460" stroke="#3A2010" stroke-width="1.5" opacity="0.5"/>
+  <line x1="133" y1="310" x2="133" y2="500" stroke="#3A2010" stroke-width="1" opacity="0.5"/>
+  <line x1="266" y1="310" x2="266" y2="500" stroke="#3A2010" stroke-width="1" opacity="0.5"/>
+  <line x1="400" y1="310" x2="400" y2="500" stroke="#3A2010" stroke-width="1" opacity="0.5"/>
+  <line x1="533" y1="310" x2="533" y2="500" stroke="#3A2010" stroke-width="1" opacity="0.5"/>
+  <line x1="666" y1="310" x2="666" y2="500" stroke="#3A2010" stroke-width="1" opacity="0.5"/>
+  <!-- TV stand -->
+  <rect x="260" y="210" width="280" height="100" rx="8" fill="#1A0E08"/>
+  <rect x="275" y="220" width="250" height="80" rx="5" fill="#120A04"/>
+  <!-- TV Screen -->
+  <rect x="250" y="60" width="300" height="165" rx="10" fill="#111" filter="url(#glow)"/>
+  <rect x="258" y="68" width="284" height="149" rx="6" fill="url(#screen)"/>
+  <!-- TV content - paw print on screen -->
+  <circle cx="400" cy="143" r="35" fill="rgba(255,255,255,0.08)"/>
+  <ellipse cx="400" cy="158" rx="18" ry="14" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="385" cy="138" r="8" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="400" cy="132" r="8" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="415" cy="138" r="8" fill="rgba(255,255,255,0.15)"/>
+  <!-- TV stand pole -->
+  <rect x="390" y="225" width="20" height="20" fill="#0A0604"/>
+  <rect x="350" y="243" width="100" height="10" rx="5" fill="#0A0604"/>
+  <!-- TV indicator light -->
+  <circle cx="542" cy="78" r="4" fill="#00FF88" filter="url(#glow)" opacity="0.9"/>
+  <!-- Luxury dog bed -->
+  <ellipse cx="400" cy="385" rx="160" ry="55" fill="#8B4513" opacity="0.4"/>
+  <ellipse cx="400" cy="378" rx="150" ry="48" fill="url(#bed)"/>
+  <ellipse cx="400" cy="370" rx="135" ry="38" fill="#D4A030"/>
+  <!-- Bed cushion -->
+  <ellipse cx="400" cy="365" rx="120" ry="30" fill="#E8C060"/>
+  <!-- Golden border on bed -->
+  <ellipse cx="400" cy="370" rx="135" ry="38" fill="none" stroke="#C8882A" stroke-width="3"/>
+  <!-- LH logo on bed -->
+  <text x="400" y="372" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#6B3A1F" font-weight="bold" opacity="0.6">LH</text>
+  <!-- Dog sleeping on bed -->
+  <!-- Body curled up -->
+  <ellipse cx="400" cy="348" rx="65" ry="30" fill="#D4A96A"/>
+  <!-- Head -->
+  <circle cx="450" cy="338" r="28" fill="#D4A96A"/>
+  <!-- Ear -->
+  <ellipse cx="438" cy="315" rx="12" ry="17" fill="#C08848" transform="rotate(-10 438 315)"/>
+  <ellipse cx="462" cy="314" rx="12" ry="17" fill="#C08848" transform="rotate(10 462 314)"/>
+  <!-- Eye closed (sleeping) -->
+  <path d="M445 336 Q451 332 457 336" fill="none" stroke="#2A1810" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Nose -->
+  <ellipse cx="458" cy="344" rx="6" ry="4" fill="#2A1810"/>
+  <!-- Tail curled -->
+  <path d="M335 355 Q310 330 325 310 Q340 295 355 318" fill="none" stroke="#D4A96A" stroke-width="12" stroke-linecap="round"/>
+  <!-- ZZZ sleeping bubbles -->
+  <text x="490" y="310" font-family="Arial" font-size="16" fill="#E8AB50" opacity="0.6" font-weight="bold">z</text>
+  <text x="508" y="295" font-family="Arial" font-size="20" fill="#E8AB50" opacity="0.5" font-weight="bold">z</text>
+  <text x="530" y="275" font-family="Arial" font-size="24" fill="#E8AB50" opacity="0.4" font-weight="bold">Z</text>
+  <!-- Warm glow under bed / heating indicator -->
+  <ellipse cx="400" cy="420" rx="180" ry="20" fill="#FF6600" opacity="0.15" filter="url(#warmglow)"/>
+  <!-- Temperature indicator -->
+  <rect x="680" y="320" width="80" height="100" rx="10" fill="#1A0E08" opacity="0.9"/>
+  <text x="720" y="345" text-anchor="middle" font-family="Arial" font-size="10" fill="#E8AB50">TEMP</text>
+  <rect x="705" y="355" width="30" height="50" rx="5" fill="#0A0604"/>
+  <rect x="705" y="375" width="30" height="30" rx="5" fill="#FF4500" opacity="0.8"/>
+  <text x="720" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#E8AB50" font-weight="bold">24°</text>
+  <!-- Paw print decor on wall -->
+  <g opacity="0.15" fill="#E8AB50">
+    <ellipse cx="100" cy="150" rx="12" ry="10"/>
+    <circle cx="88" cy="133" r="6"/>
+    <circle cx="100" cy="129" r="6"/>
+    <circle cx="112" cy="133" r="6"/>
+  </g>
+  <!-- Stars/warmth symbols -->
+  <text x="30" y="380" font-size="16" fill="#FF8C00" opacity="0.4">🌟</text>
+  <text x="720" y="280" font-size="16" fill="#FF8C00" opacity="0.4">✦</text>
+</svg>

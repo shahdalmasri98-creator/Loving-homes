@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="herosky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1B2A"/>
+      <stop offset="50%" style="stop-color:#1A3A5C"/>
+      <stop offset="100%" style="stop-color:#2E5A8C"/>
+    </linearGradient>
+    <linearGradient id="building" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5E6D0"/>
+      <stop offset="100%" style="stop-color:#E8D0B0"/>
+    </linearGradient>
+    <linearGradient id="lobby" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700" stop-opacity="0.6"/>
+      <stop offset="100%" style="stop-color:#FF8C00" stop-opacity="0.3"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD700" stop-opacity="0.8"/>
+      <stop offset="100%" style="stop-color:#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="buildingSh">
+      <feDropShadow dx="5" dy="10" stdDeviation="15" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <!-- Night sky -->
+  <rect width="800" height="500" fill="url(#herosky)"/>
+  <!-- Stars -->
+  <g fill="#fff" filter="url(#starGlow)">
+    <circle cx="50" cy="30" r="1.5" opacity="0.9"/>
+    <circle cx="120" cy="55" r="1" opacity="0.8"/>
+    <circle cx="200" cy="25" r="1.8" opacity="0.9"/>
+    <circle cx="280" cy="45" r="1.2" opacity="0.7"/>
+    <circle cx="350" cy="20" r="1.5" opacity="0.8"/>
+    <circle cx="450" cy="35" r="1" opacity="0.9"/>
+    <circle cx="530" cy="18" r="1.8" opacity="0.8"/>
+    <circle cx="620" cy="42" r="1.2" opacity="0.7"/>
+    <circle cx="700" cy="28" r="1.5" opacity="0.9"/>
+    <circle cx="770" cy="50" r="1" opacity="0.8"/>
+    <circle cx="85" cy="80" r="1" opacity="0.6"/>
+    <circle cx="165" cy="70" r="1.5" opacity="0.7"/>
+    <circle cx="400" cy="60" r="1" opacity="0.8"/>
+    <circle cx="570" cy="75" r="1.5" opacity="0.6"/>
+    <circle cx="660" cy="65" r="1" opacity="0.7"/>
+    <circle cx="750" cy="85" r="1.8" opacity="0.8"/>
+  </g>
+  <!-- Moon -->
+  <circle cx="700" cy="80" r="45" fill="#FFE090" opacity="0.85" filter="url(#starGlow)"/>
+  <circle cx="715" cy="70" r="38" fill="#E8C870"/>
+  <!-- Moon glow -->
+  <circle cx="700" cy="80" r="70" fill="url(#glow2)" opacity="0.3"/>
+  <!-- City skyline (distant) -->
+  <g fill="#0A1520" opacity="0.6">
+    <rect x="0" y="200" width="60" height="200"/>
+    <rect x="55" y="240" width="40" height="160"/>
+    <rect x="90" y="210" width="50" height="190"/>
+    <rect x="650" y="230" width="45" height="170"/>
+    <rect x="688" y="215" width="55" height="185"/>
+    <rect x="738" y="245" width="40" height="155"/>
+    <rect x="772" y="220" width="28" height="180"/>
+  </g>
+  <!-- Main Building - LOVING HOMES Hotel -->
+  <g filter="url(#buildingSh)">
+    <!-- Main structure -->
+    <rect x="180" y="130" width="440" height="300" fill="url(#building)"/>
+    <!-- Roof structure decorative -->
+    <rect x="165" y="115" width="470" height="25" rx="5" fill="#E8D0B0"/>
+    <!-- Roof trim -->
+    <rect x="155" y="100" width="490" height="20" rx="8" fill="#C8882A"/>
+    <!-- Gold trim line -->
+    <rect x="155" y="118" width="490" height="5" fill="#E8AB50"/>
+    <!-- Roof details -->
+    <rect x="190" y="88" width="420" height="18" rx="6" fill="#E8D0B0"/>
+    <!-- Grand header -->
+    <rect x="240" y="75" width="320" height="20" rx="8" fill="#6B3A1F"/>
+    <text x="400" y="90" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#E8AB50" font-weight="bold">LOVING HOMES</text>
+    <!-- Luxury sign under header -->
+    <text x="400" y="68" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#C8882A" letter-spacing="5">★ ★ ★ ★ ★</text>
+    <!-- Columns flanking entrance -->
+    <rect x="200" y="130" width="25" height="300" fill="#EDD8B8"/>
+    <rect x="575" y="130" width="25" height="300" fill="#EDD8B8"/>
+    <rect x="290" y="130" width="20" height="300" fill="#EDD8B8"/>
+    <rect x="490" y="130" width="20" height="300" fill="#EDD8B8"/>
+    <!-- Columns tops -->
+    <rect x="193" y="123" width="39" height="12" rx="3" fill="#C8882A"/>
+    <rect x="568" y="123" width="39" height="12" rx="3" fill="#C8882A"/>
+    <rect x="283" y="123" width="34" height="12" rx="3" fill="#C8882A"/>
+    <rect x="483" y="123" width="34" height="12" rx="3" fill="#C8882A"/>
+    <!-- Window rows - upper floor -->
+    <g fill="url(#lobby)" stroke="#C8882A" stroke-width="1.5">
+      <rect x="225" y="165" width="55" height="65" rx="4"/>
+      <rect x="310" y="165" width="55" height="65" rx="4"/>
+      <rect x="435" y="165" width="55" height="65" rx="4"/>
+      <rect x="520" y="165" width="55" height="65" rx="4"/>
+    </g>
+    <!-- Window cross dividers -->
+    <g stroke="#C8882A" stroke-width="1" opacity="0.5">
+      <line x1="225" y1="197" x2="280" y2="197"/>
+      <line x1="252" y1="165" x2="252" y2="230"/>
+      <line x1="310" y1="197" x2="365" y2="197"/>
+      <line x1="337" y1="165" x2="337" y2="230"/>
+      <line x1="435" y1="197" x2="490" y2="197"/>
+      <line x1="462" y1="165" x2="462" y2="230"/>
+      <line x1="520" y1="197" x2="575" y2="197"/>
+      <line x1="547" y1="165" x2="547" y2="230"/>
+    </g>
+    <!-- Grand entrance door -->
+    <rect x="330" y="280" width="140" height="150" rx="6" fill="#2A1810"/>
+    <rect x="340" y="288" width="58" height="135" rx="4" fill="url(#lobby)"/>
+    <rect x="402" y="288" width="58" height="135" rx="4" fill="url(#lobby)"/>
+    <!-- Door handles -->
+    <circle cx="398" cy="360" r="8" fill="#C8882A"/>
+    <circle cx="402" cy="360" r="8" fill="#C8882A"/>
+    <!-- Entrance arch -->
+    <path d="M320 280 Q400 230 480 280" fill="#C8882A" opacity="0.6"/>
+    <path d="M322 280 Q400 234 478 280" fill="none" stroke="#E8AB50" stroke-width="3"/>
+    <!-- Awning -->
+    <polygon points="290,305 510,305 530,285 270,285" fill="#6B3A1F" opacity="0.9"/>
+    <polygon points="290,305 510,305 530,285 270,285" fill="none" stroke="#E8AB50" stroke-width="2"/>
+    <!-- Awning stripes -->
+    <g opacity="0.3">
+      <line x1="310" y1="285" x2="296" y2="305" stroke="#E8AB50" stroke-width="2"/>
+      <line x1="340" y1="285" x2="328" y2="305" stroke="#E8AB50" stroke-width="2"/>
+      <line x1="370" y1="285" x2="360" y2="305" stroke="#E8AB50" stroke-width="2"/>
+      <line x1="400" y1="285" x2="392" y2="305" stroke="#E8AB50" stroke-width="2"/>
+      <line x1="430" y1="285" x2="424" y2="305" stroke="#E8AB50" stroke-width="2"/>
+      <line x1="460" y1="285" x2="456" y2="305" stroke="#E8AB50" stroke-width="2"/>
+      <line x1="490" y1="285" x2="488" y2="305" stroke="#E8AB50" stroke-width="2"/>
+    </g>
+    <!-- Golden lobby light glow -->
+    <ellipse cx="400" cy="380" rx="120" ry="40" fill="#FFD700" opacity="0.2" filter="url(#starGlow)"/>
+    <!-- Paw print above door -->
+    <g fill="#E8AB50" opacity="0.5">
+      <ellipse cx="400" cy="255" rx="14" ry="12"/>
+      <circle cx="386" cy="240" r="7"/>
+      <circle cx="400" cy="236" r="7"/>
+      <circle cx="414" cy="240" r="7"/>
+    </g>
+  </g>
+  <!-- Ground / pavement -->
+  <rect x="0" y="428" width="800" height="72" fill="#1A2A3A"/>
+  <rect x="0" y="425" width="800" height="5" fill="#0D1B2A"/>
+  <!-- Pavement light patches -->
+  <ellipse cx="400" cy="445" rx="180" ry="25" fill="#FFD700" opacity="0.08" filter="url(#starGlow)"/>
+  <!-- Decorative lamp posts -->
+  <g>
+    <!-- Left lamp -->
+    <rect x="235" y="340" width="8" height="95" fill="#8B6B45"/>
+    <rect x="210" y="338" width="58" height="8" rx="3" fill="#8B6B45"/>
+    <ellipse cx="238" cy="335" rx="25" ry="12" fill="#FFD700" opacity="0.9" filter="url(#starGlow)"/>
+    <ellipse cx="238" cy="335" rx="18" ry="8" fill="#FFE090"/>
+    <!-- Right lamp -->
+    <rect x="557" y="340" width="8" height="95" fill="#8B6B45"/>
+    <rect x="532" y="338" width="58" height="8" rx="3" fill="#8B6B45"/>
+    <ellipse cx="560" cy="335" rx="25" ry="12" fill="#FFD700" opacity="0.9" filter="url(#starGlow)"/>
+    <ellipse cx="560" cy="335" rx="18" ry="8" fill="#FFE090"/>
+  </g>
+  <!-- Two elegant dogs at entrance -->
+  <!-- Dog left (sitting proud) -->
+  <g transform="translate(300,375)">
+    <ellipse cx="0" cy="0" rx="28" ry="22" fill="#D4A96A"/>
+    <circle cx="0" cy="-30" r="22" fill="#D4A96A"/>
+    <ellipse cx="-12" cy="-47" rx="9" ry="14" fill="#C08848"/>
+    <ellipse cx="12" cy="-47" rx="9" ry="14" fill="#C08848"/>
+    <circle cx="-7" cy="-33" r="5" fill="#2A1810"/>
+    <circle cx="-5" cy="-35" r="1.5" fill="#fff"/>
+    <circle cx="7" cy="-33" r="5" fill="#2A1810"/>
+    <circle cx="9" cy="-35" r="1.5" fill="#fff"/>
+    <ellipse cx="0" cy="-25" rx="5" ry="3.5" fill="#2A1810"/>
+    <path d="M-5 -20 Q0 -14 5 -20" fill="none" stroke="#C08848" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Collar -->
+    <rect x="-22" y="-18" width="44" height="7" rx="3.5" fill="#C8882A"/>
+    <circle cx="0" cy="-14" r="4" fill="#E8AB50"/>
+  </g>
+  <!-- Dog right (sitting) -->
+  <g transform="translate(500,378)">
+    <ellipse cx="0" cy="0" rx="26" ry="20" fill="#8B6B45"/>
+    <circle cx="0" cy="-28" r="20" fill="#8B6B45"/>
+    <ellipse cx="-11" cy="-44" rx="9" ry="13" fill="#6B4A2A"/>
+    <ellipse cx="11" cy="-44" rx="9" ry="13" fill="#6B4A2A"/>
+    <circle cx="-6" cy="-31" r="5" fill="#2A1810"/>
+    <circle cx="-4" cy="-33" r="1.5" fill="#fff"/>
+    <circle cx="6" cy="-31" r="5" fill="#2A1810"/>
+    <circle cx="8" cy="-33" r="1.5" fill="#fff"/>
+    <ellipse cx="0" cy="-23" rx="4.5" ry="3" fill="#2A1810"/>
+    <!-- Collar -->
+    <rect x="-20" y="-16" width="40" height="6" rx="3" fill="#C8882A"/>
+    <circle cx="0" cy="-13" r="4" fill="#E8AB50"/>
+  </g>
+  <!-- Light reflection on pavement -->
+  <g opacity="0.06">
+    <ellipse cx="238" cy="448" rx="30" ry="15" fill="#FFD700"/>
+    <ellipse cx="560" cy="448" rx="30" ry="15" fill="#FFD700"/>
+    <ellipse cx="400" cy="448" rx="50" ry="20" fill="#FFD700"/>
+  </g>
+</svg>

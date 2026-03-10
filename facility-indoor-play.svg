@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="playbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8F0"/>
+      <stop offset="100%" style="stop-color:#FFE8D0"/>
+    </linearGradient>
+    <linearGradient id="playfloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8BC34A"/>
+      <stop offset="100%" style="stop-color:#689F38"/>
+    </linearGradient>
+    <linearGradient id="slide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF7043"/>
+      <stop offset="100%" style="stop-color:#E64A19"/>
+    </linearGradient>
+    <linearGradient id="tunnel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9C27B0"/>
+      <stop offset="100%" style="stop-color:#673AB7"/>
+    </linearGradient>
+    <filter id="playsh">
+      <feDropShadow dx="2" dy="4" stdDeviation="5" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <!-- Bright playful background -->
+  <rect width="800" height="500" fill="url(#playbg)"/>
+  <!-- Wall -->
+  <rect x="0" y="0" width="800" height="290" fill="#FFFAF5"/>
+  <!-- Colorful wall stripes -->
+  <rect x="0" y="0" width="800" height="15" fill="#FF7043" opacity="0.3"/>
+  <rect x="0" y="15" width="800" height="15" fill="#FFD740" opacity="0.3"/>
+  <rect x="0" y="30" width="800" height="15" fill="#69F0AE" opacity="0.3"/>
+  <rect x="0" y="45" width="800" height="15" fill="#40C4FF" opacity="0.3"/>
+  <!-- Paw print wallpaper -->
+  <g fill="#FFE0C0" opacity="0.4">
+    <g transform="translate(60,90)"><ellipse cx="0" cy="0" rx="11" ry="10"/><circle cx="-10" cy="-12" r="6"/><circle cx="0" cy="-15" r="6"/><circle cx="10" cy="-12" r="6"/></g>
+    <g transform="translate(180,60)"><ellipse cx="0" cy="0" rx="11" ry="10"/><circle cx="-10" cy="-12" r="6"/><circle cx="0" cy="-15" r="6"/><circle cx="10" cy="-12" r="6"/></g>
+    <g transform="translate(320,80)"><ellipse cx="0" cy="0" rx="11" ry="10"/><circle cx="-10" cy="-12" r="6"/><circle cx="0" cy="-15" r="6"/><circle cx="10" cy="-12" r="6"/></g>
+    <g transform="translate(500,65)"><ellipse cx="0" cy="0" rx="11" ry="10"/><circle cx="-10" cy="-12" r="6"/><circle cx="0" cy="-15" r="6"/><circle cx="10" cy="-12" r="6"/></g>
+    <g transform="translate(660,85)"><ellipse cx="0" cy="0" rx="11" ry="10"/><circle cx="-10" cy="-12" r="6"/><circle cx="0" cy="-15" r="6"/><circle cx="10" cy="-12" r="6"/></g>
+    <g transform="translate(120,170)"><ellipse cx="0" cy="0" rx="11" ry="10"/><circle cx="-10" cy="-12" r="6"/><circle cx="0" cy="-15" r="6"/><circle cx="10" cy="-12" r="6"/></g>
+    <g transform="translate(420,160)"><ellipse cx="0" cy="0" rx="11" ry="10"/><circle cx="-10" cy="-12" r="6"/><circle cx="0" cy="-15" r="6"/><circle cx="10" cy="-12" r="6"/></g>
+    <g transform="translate(720,160)"><ellipse cx="0" cy="0" rx="11" ry="10"/><circle cx="-10" cy="-12" r="6"/><circle cx="0" cy="-15" r="6"/><circle cx="10" cy="-12" r="6"/></g>
+  </g>
+  <!-- Floor -->
+  <rect x="0" y="290" width="800" height="210" fill="url(#playfloor)"/>
+  <rect x="0" y="287" width="800" height="5" fill="#558B2F"/>
+  <!-- Floor mats -->
+  <rect x="50" y="295" width="200" height="80" rx="10" fill="#FF7043" opacity="0.4"/>
+  <rect x="550" y="295" width="200" height="80" rx="10" fill="#40C4FF" opacity="0.4"/>
+  <!-- SLIDE / Ramp -->
+  <g filter="url(#playsh)">
+    <rect x="100" y="160" width="25" height="155" rx="5" fill="#FF7043"/>
+    <rect x="220" y="200" width="25" height="115" rx="5" fill="#FF7043"/>
+    <!-- Platform at top -->
+    <rect x="95" y="150" width="150" height="18" rx="6" fill="#FF5722"/>
+    <!-- Ramp/slide -->
+    <polygon points="120,168 245,200 245,220 120,220" fill="url(#slide)" opacity="0.9"/>
+    <!-- Slide edge guard -->
+    <line x1="120" y1="168" x2="245" y2="200" stroke="#FF7043" stroke-width="5"/>
+    <!-- Steps -->
+    <rect x="95" y="222" width="30" height="20" rx="3" fill="#FF7043"/>
+    <rect x="95" y="245" width="30" height="20" rx="3" fill="#E64A19"/>
+    <rect x="95" y="268" width="30" height="20" rx="3" fill="#FF7043"/>
+  </g>
+  <!-- TUNNEL -->
+  <g filter="url(#playsh)">
+    <ellipse cx="450" cy="315" rx="60" ry="55" fill="url(#tunnel)" opacity="0.85"/>
+    <ellipse cx="450" cy="315" rx="45" ry="42" fill="#1A0030"/>
+    <ellipse cx="580" cy="320" rx="60" ry="55" fill="url(#tunnel)" opacity="0.85"/>
+    <ellipse cx="580" cy="320" rx="45" ry="42" fill="#1A0030"/>
+    <!-- Tunnel body connecting -->
+    <rect x="450" y="260" width="130" height="55" fill="#7B1FA2" opacity="0.8"/>
+    <rect x="450" y="320" width="130" height="50" fill="#7B1FA2" opacity="0.8"/>
+    <!-- Stripe on tunnel -->
+    <rect x="450" y="288" width="130" height="12" fill="#AB47BC" opacity="0.6"/>
+  </g>
+  <!-- BALL PIT -->
+  <g filter="url(#playsh)">
+    <rect x="560" y="200" width="200" height="120" rx="20" fill="#FFD740" opacity="0.9"/>
+    <!-- Balls in pit -->
+    <circle cx="590" cy="270" r="15" fill="#FF4081"/>
+    <circle cx="615" cy="255" r="13" fill="#40C4FF"/>
+    <circle cx="640" cy="268" r="14" fill="#69F0AE"/>
+    <circle cx="665" cy="252" r="13" fill="#FF7043"/>
+    <circle cx="690" cy="265" r="15" fill="#E040FB"/>
+    <circle cx="712" cy="252" r="13" fill="#FFD740"/>
+    <circle cx="600" cy="290" r="12" fill="#69F0AE"/>
+    <circle cx="625" cy="280" r="14" fill="#FF4081"/>
+    <circle cx="650" cy="290" r="13" fill="#40C4FF"/>
+    <circle cx="678" cy="280" r="14" fill="#FF7043"/>
+    <circle cx="702" cy="290" r="12" fill="#E040FB"/>
+    <circle cx="730" cy="265" r="13" fill="#69F0AE"/>
+    <!-- Small dog in ball pit -->
+    <circle cx="665" cy="232" r="22" fill="#D4A96A"/>
+    <ellipse cx="653" cy="215" rx="9" ry="13" fill="#C08848" transform="rotate(-15)"/>
+    <ellipse cx="676" cy="215" rx="9" ry="13" fill="#C08848" transform="rotate(15 676 215)"/>
+    <circle cx="659" cy="230" r="5" fill="#2A1810"/>
+    <circle cx="673" cy="230" r="5" fill="#2A1810"/>
+    <ellipse cx="666" cy="238" rx="5" ry="4" fill="#2A1810"/>
+    <path d="M660 244 Q666 250 672 244" fill="#E06080"/>
+  </g>
+  <!-- DOG running toward slide -->
+  <g transform="translate(290, 305)">
+    <ellipse cx="0" cy="0" rx="58" ry="28" fill="#8B6B45" filter="url(#playsh)" transform="rotate(-10)"/>
+    <circle cx="55" cy="-15" r="25" fill="#8B6B45"/>
+    <ellipse cx="44" cy="-26" rx="10" ry="16" fill="#6B4A2A" transform="rotate(-15 44 -26)"/>
+    <circle cx="61" cy="-18" r="6" fill="#2A1810"/>
+    <circle cx="63" cy="-20" r="1.8" fill="#fff"/>
+    <ellipse cx="68" cy="-10" rx="5" ry="3.5" fill="#2A1810"/>
+    <!-- Tongue out excited -->
+    <path d="M62 -5 Q68 2 74 -5" fill="#E06080"/>
+    <ellipse cx="68" cy="1" rx="6" ry="4" fill="#E06080"/>
+    <!-- Running legs -->
+    <line x1="-25" y1="15" x2="-38" y2="42" stroke="#7A5A35" stroke-width="10" stroke-linecap="round"/>
+    <line x1="-5" y1="20" x2="-2" y2="46" stroke="#7A5A35" stroke-width="10" stroke-linecap="round"/>
+    <line x1="20" y1="16" x2="34" y2="42" stroke="#7A5A35" stroke-width="10" stroke-linecap="round"/>
+    <line x1="38" y1="10" x2="30" y2="-14" stroke="#7A5A35" stroke-width="10" stroke-linecap="round"/>
+    <!-- Tail wag -->
+    <path d="M-52 -2 Q-78 -28 -64 -48" fill="none" stroke="#8B6B45" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <!-- Colorful bunting decorations -->
+  <path d="M0,40 Q100,60 200,40 Q300,20 400,40 Q500,60 600,40 Q700,20 800,40" fill="none" stroke="#FF7043" stroke-width="2" opacity="0.5"/>
+  <!-- Bunting triangles -->
+  <g opacity="0.7">
+    <polygon points="50,38 65,38 57,55" fill="#FF7043"/>
+    <polygon points="120,44 135,44 127,61" fill="#FFD740"/>
+    <polygon points="200,38 215,38 207,55" fill="#69F0AE"/>
+    <polygon points="280,30 295,30 287,47" fill="#40C4FF"/>
+    <polygon points="360,38 375,38 367,55" fill="#E040FB"/>
+    <polygon points="440,44 455,44 447,61" fill="#FF4081"/>
+    <polygon points="520,38 535,38 527,55" fill="#FF7043"/>
+    <polygon points="600,30 615,30 607,47" fill="#FFD740"/>
+    <polygon points="680,38 695,38 687,55" fill="#69F0AE"/>
+    <polygon points="755,44 770,44 762,61" fill="#40C4FF"/>
+  </g>
+  <!-- Sign -->
+  <rect x="20" y="100" width="170" height="55" rx="10" fill="#6B3A1F" opacity="0.9"/>
+  <text x="105" y="123" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#E8AB50" font-weight="bold">حظيرة اللعب</text>
+  <text x="105" y="143" text-anchor="middle" font-family="Arial" font-size="10" fill="#FAF5EC">Indoor Play Zone</text>
+</svg>

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="vetbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F4F8"/>
+      <stop offset="100%" style="stop-color:#D0E8F0"/>
+    </linearGradient>
+    <linearGradient id="table3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B8D8E8"/>
+      <stop offset="100%" style="stop-color:#90B8C8"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F0F0F0"/>
+    </linearGradient>
+    <filter id="sh3">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <!-- Clean clinic background -->
+  <rect width="800" height="500" fill="url(#vetbg)"/>
+  <!-- Wall -->
+  <rect x="0" y="0" width="800" height="290" fill="#F5FAFE"/>
+  <!-- Tiled wall pattern -->
+  <g stroke="#E0EEF5" stroke-width="1" fill="none">
+    <line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="80" y1="0" x2="80" y2="290"/>
+    <line x1="160" y1="0" x2="160" y2="290"/>
+    <line x1="240" y1="0" x2="240" y2="290"/>
+    <line x1="320" y1="0" x2="320" y2="290"/>
+    <line x1="400" y1="0" x2="400" y2="290"/>
+    <line x1="480" y1="0" x2="480" y2="290"/>
+    <line x1="560" y1="0" x2="560" y2="290"/>
+    <line x1="640" y1="0" x2="640" y2="290"/>
+    <line x1="720" y1="0" x2="720" y2="290"/>
+  </g>
+  <!-- Floor -->
+  <rect x="0" y="290" width="800" height="210" fill="#D8EEF5"/>
+  <rect x="0" y="287" width="800" height="6" fill="#B0C8D5"/>
+  <!-- Exam table -->
+  <rect x="220" y="200" width="360" height="18" rx="6" fill="url(#table3)" filter="url(#sh3)"/>
+  <rect x="235" y="218" width="14" height="100" fill="#80A8B8"/>
+  <rect x="551" y="218" width="14" height="100" fill="#80A8B8"/>
+  <rect x="230" y="306" width="340" height="10" rx="4" fill="#6898A8"/>
+  <!-- Red cross sign -->
+  <rect x="45" y="35" width="120" height="120" rx="12" fill="#CC2222" filter="url(#sh3)"/>
+  <rect x="90" y="55" width="30" height="80" rx="5" fill="#fff"/>
+  <rect x="65" y="80" width="80" height="30" rx="5" fill="#fff"/>
+  <!-- 24/7 sign -->
+  <rect x="600" y="30" width="160" height="80" rx="10" fill="#6B3A1F"/>
+  <text x="680" y="62" text-anchor="middle" font-family="Arial" font-size="22" fill="#E8AB50" font-weight="bold">24/7</text>
+  <text x="680" y="82" text-anchor="middle" font-family="Arial" font-size="11" fill="#FAF5EC">رعاية متواصلة</text>
+  <!-- Vet doctor silhouette -->
+  <g filter="url(#sh3)">
+    <!-- Body/coat -->
+    <rect x="540" y="130" width="90" height="160" rx="20" fill="url(#coat)"/>
+    <!-- Head -->
+    <circle cx="585" cy="105" r="38" fill="#F5D5B5"/>
+    <!-- Hair -->
+    <ellipse cx="585" cy="78" rx="38" ry="20" fill="#5A3010"/>
+    <!-- Face features -->
+    <circle cx="572" cy="105" r="6" fill="#2A1810"/>
+    <circle cx="574" cy="103" r="2" fill="#fff"/>
+    <circle cx="598" cy="105" r="6" fill="#2A1810"/>
+    <circle cx="600" cy="103" r="2" fill="#fff"/>
+    <path d="M576 118 Q585 126 594 118" fill="none" stroke="#C08848" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Nose -->
+    <ellipse cx="585" cy="114" rx="5" ry="3" fill="#E0A080"/>
+    <!-- Coat pockets -->
+    <rect x="548" y="200" width="30" height="22" rx="4" fill="#E8E8E8"/>
+    <rect x="592" y="200" width="30" height="22" rx="4" fill="#E8E8E8"/>
+    <!-- Stethoscope -->
+    <path d="M555 145 Q540 175 545 195 Q548 210 560 210 Q572 210 574 198" fill="none" stroke="#4A4A4A" stroke-width="4"/>
+    <circle cx="574" cy="196" r="10" fill="#4A4A4A"/>
+    <circle cx="574" cy="196" r="6" fill="#888"/>
+    <!-- Arm extending towards dog -->
+    <rect x="460" y="155" width="85" height="25" rx="12" fill="url(#coat)"/>
+    <!-- Hand -->
+    <ellipse cx="462" cy="167" rx="18" ry="14" fill="#F5D5B5"/>
+  </g>
+  <!-- Dog on table -->
+  <!-- Body -->
+  <ellipse cx="370" cy="185" rx="95" ry="40" fill="#D4A96A" filter="url(#sh3)"/>
+  <!-- Head -->
+  <circle cx="268" cy="170" r="40" fill="#D4A96A"/>
+  <!-- Ear floppy -->
+  <ellipse cx="248" cy="145" rx="16" ry="24" fill="#C08848" transform="rotate(15 248 145)"/>
+  <ellipse cx="282" cy="138" rx="16" ry="22" fill="#C08848" transform="rotate(-10 282 138)"/>
+  <!-- Eye -->
+  <circle cx="260" cy="168" r="9" fill="#2A1810"/>
+  <circle cx="262" cy="166" r="3" fill="#fff"/>
+  <!-- Nose -->
+  <ellipse cx="248" cy="180" rx="8" ry="6" fill="#2A1810"/>
+  <!-- Mouth slightly open - panting nervously -->
+  <path d="M240 188 Q248 198 256 188" fill="#E06080"/>
+  <!-- Tongue -->
+  <ellipse cx="248" cy="196" rx="7" ry="5" fill="#E06080"/>
+  <!-- Paws -->
+  <ellipse cx="300" cy="210" rx="28" ry="14" fill="#C09050"/>
+  <ellipse cx="420" cy="210" rx="28" ry="14" fill="#C09050"/>
+  <!-- Tail -->
+  <path d="M455 175 Q490 155 480 135 Q470 120 460 138" fill="none" stroke="#D4A96A" stroke-width="14" stroke-linecap="round"/>
+  <!-- IV drip / health monitor -->
+  <rect x="90" y="100" width="70" height="110" rx="8" fill="#E0EEF5" stroke="#B0C8D5" stroke-width="2"/>
+  <!-- Monitor screen -->
+  <rect x="98" y="108" width="54" height="55" rx="4" fill="#0A1628"/>
+  <!-- Heart rate line -->
+  <polyline points="100,135 110,135 116,118 122,152 128,118 134,152 140,135 152,135" fill="none" stroke="#00FF88" stroke-width="2"/>
+  <text x="125" y="178" text-anchor="middle" font-family="Arial" font-size="9" fill="#5A8A9A">❤ 84 bpm</text>
+  <text x="125" y="192" text-anchor="middle" font-family="Arial" font-size="9" fill="#5A8A9A">NORMAL</text>
+  <!-- IV stand pole -->
+  <rect x="120" y="210" width="8" height="120" fill="#B0C8D5"/>
+  <rect x="95" y="326" width="58" height="8" rx="4" fill="#B0C8D5"/>
+  <!-- IV bag -->
+  <ellipse cx="124" cy="100" rx="22" ry="28" fill="#D5EEF8" stroke="#B0D5E8" stroke-width="2"/>
+  <rect x="118" y="122" width="12" height="18" fill="#90B8C8"/>
+  <!-- Medicine cabinet on wall -->
+  <rect x="650" y="120" width="120" height="150" rx="8" fill="#D8EEF5" stroke="#B0C8D5" stroke-width="2"/>
+  <line x1="650" y1="195" x2="770" y2="195" stroke="#B0C8D5" stroke-width="1.5"/>
+  <line x1="710" y1="120" x2="710" y2="270" stroke="#B0C8D5" stroke-width="1.5"/>
+  <!-- Medicine bottles -->
+  <rect x="660" y="205" width="20" height="35" rx="4" fill="#FF9090" opacity="0.8"/>
+  <rect x="686" y="210" width="18" height="30" rx="4" fill="#90D4FF" opacity="0.8"/>
+  <rect x="718" y="205" width="20" height="35" rx="4" fill="#90FF90" opacity="0.8"/>
+  <rect x="744" y="208" width="18" height="32" rx="4" fill="#FFD090" opacity="0.8"/>
+  <!-- Paw prints on floor -->
+  <g fill="#A0C0D0" opacity="0.3">
+    <ellipse cx="650" cy="380" rx="9" ry="8"/>
+    <circle cx="638" cy="368" r="5"/>
+    <circle cx="650" cy="364" r="5"/>
+    <circle cx="662" cy="368" r="5"/>
+    <ellipse cx="700" cy="420" rx="9" ry="8"/>
+    <circle cx="688" cy="408" r="5"/>
+    <circle cx="700" cy="404" r="5"/>
+    <circle cx="712" cy="408" r="5"/>
+  </g>
+  <!-- Heart decoration -->
+  <text x="400" y="460" text-anchor="middle" font-size="22" fill="#CC2222" opacity="0.3">♥</text>
+  <text x="750" y="430" font-size="18" fill="#CC2222" opacity="0.25">♥</text>
+</svg>

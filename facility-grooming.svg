@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5E6D0"/>
+      <stop offset="100%" style="stop-color:#E8C9A0"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A96A"/>
+      <stop offset="100%" style="stop-color:#B8895A"/>
+    </linearGradient>
+    <linearGradient id="table" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B6B45"/>
+      <stop offset="100%" style="stop-color:#6B4A2A"/>
+    </linearGradient>
+    <linearGradient id="dogBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A96A"/>
+      <stop offset="100%" style="stop-color:#C49050"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="5" stdDeviation="6" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Wall tiles pattern -->
+  <rect x="0" y="0" width="800" height="300" fill="#F0DEC0" opacity="0.6"/>
+  <line x1="0" y1="100" x2="800" y2="100" stroke="#E0C8A0" stroke-width="1"/>
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#E0C8A0" stroke-width="1"/>
+  <line x1="100" y1="0" x2="100" y2="300" stroke="#E0C8A0" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="300" stroke="#E0C8A0" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="300" stroke="#E0C8A0" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="300" stroke="#E0C8A0" stroke-width="1"/>
+  <line x1="500" y1="0" x2="500" y2="300" stroke="#E0C8A0" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="300" stroke="#E0C8A0" stroke-width="1"/>
+  <line x1="700" y1="0" x2="700" y2="300" stroke="#E0C8A0" stroke-width="1"/>
+  <!-- Floor -->
+  <rect x="0" y="300" width="800" height="200" fill="url(#floor)"/>
+  <rect x="0" y="295" width="800" height="10" fill="#B8895A"/>
+  <!-- Grooming table -->
+  <rect x="250" y="200" width="300" height="15" rx="5" fill="url(#table)" filter="url(#shadow)"/>
+  <rect x="260" y="215" width="12" height="90" fill="#5A3A1A"/>
+  <rect x="518" y="215" width="12" height="90" fill="#5A3A1A"/>
+  <rect x="280" y="290" width="240" height="8" fill="#4A2A10"/>
+  <!-- Dog on table -->
+  <!-- Body -->
+  <ellipse cx="400" cy="190" rx="80" ry="45" fill="url(#dogBody)" filter="url(#shadow)"/>
+  <!-- Head -->
+  <circle cx="480" cy="170" r="38" fill="#D4A96A"/>
+  <!-- Ear left -->
+  <ellipse cx="458" cy="143" rx="16" ry="22" fill="#C08848" transform="rotate(-15 458 143)"/>
+  <!-- Ear right -->
+  <ellipse cx="500" cy="143" rx="16" ry="22" fill="#C08848" transform="rotate(15 500 143)"/>
+  <!-- Eye -->
+  <circle cx="486" cy="165" r="8" fill="#2A1810"/>
+  <circle cx="488" cy="163" r="2.5" fill="#fff"/>
+  <!-- Nose -->
+  <ellipse cx="496" cy="178" rx="7" ry="5" fill="#2A1810"/>
+  <!-- Tongue -->
+  <path d="M490 184 Q496 196 502 184" fill="#E06080" stroke="#C04060" stroke-width="1"/>
+  <!-- Tail -->
+  <path d="M320 180 Q290 140 310 120 Q330 105 320 130" fill="none" stroke="#D4A96A" stroke-width="14" stroke-linecap="round"/>
+  <!-- Paws -->
+  <ellipse cx="350" cy="210" rx="22" ry="12" fill="#C09050"/>
+  <ellipse cx="440" cy="210" rx="22" ry="12" fill="#C09050"/>
+  <!-- Bow on head -->
+  <path d="M468 148 Q476 140 484 148 Q476 156 468 148" fill="#E83060"/>
+  <path d="M484 148 Q492 140 500 148 Q492 156 484 148" fill="#E83060"/>
+  <circle cx="484" cy="148" r="5" fill="#C01040"/>
+  <!-- Scissors (groomer tool) -->
+  <g transform="translate(170,130) rotate(25)">
+    <rect x="0" y="-2" width="80" height="4" rx="2" fill="#888"/>
+    <rect x="0" y="-2" width="80" height="4" rx="2" fill="#888" transform="rotate(30 0 0)"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#888" stroke-width="3"/>
+    <circle cx="80" cy="0" r="8" fill="none" stroke="#888" stroke-width="3"/>
+  </g>
+  <!-- Brush -->
+  <rect x="570" y="160" width="55" height="12" rx="4" fill="#8B6B45"/>
+  <rect x="570" y="172" width="55" height="18" rx="2" fill="#5A3A1A"/>
+  <!-- Bristles -->
+  <line x1="575" y1="172" x2="575" y2="190" stroke="#DDD" stroke-width="1.5"/>
+  <line x1="582" y1="172" x2="582" y2="190" stroke="#DDD" stroke-width="1.5"/>
+  <line x1="589" y1="172" x2="589" y2="190" stroke="#DDD" stroke-width="1.5"/>
+  <line x1="596" y1="172" x2="596" y2="190" stroke="#DDD" stroke-width="1.5"/>
+  <line x1="603" y1="172" x2="603" y2="190" stroke="#DDD" stroke-width="1.5"/>
+  <line x1="610" y1="172" x2="610" y2="190" stroke="#DDD" stroke-width="1.5"/>
+  <line x1="617" y1="172" x2="617" y2="190" stroke="#DDD" stroke-width="1.5"/>
+  <!-- Sign on wall -->
+  <rect x="30" y="30" width="180" height="70" rx="10" fill="#6B3A1F" opacity="0.9"/>
+  <text x="120" y="60" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#E8AB50" font-weight="bold">Loving Homes</text>
+  <text x="120" y="82" text-anchor="middle" font-family="Arial" font-size="11" fill="#FAF5EC">صالة الحلاقة</text>
+  <!-- Stars -->
+  <text x="600" y="50" font-size="20" fill="#E8AB50">★★★★★</text>
+  <!-- Sparkles around dog -->
+  <text x="140" y="170" font-size="18" fill="#E8AB50" opacity="0.8">✨</text>
+  <text x="520" y="130" font-size="14" fill="#E8AB50" opacity="0.7">✨</text>
+  <text x="350" y="100" font-size="16" fill="#E8AB50" opacity="0.6">✨</text>
+</svg>
